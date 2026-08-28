@@ -395,8 +395,10 @@ def is_blacklisted(name, url, exact, fuzzy, url_black):
 
 # ================== 测速 ==================
 
-def quick_test_url(session, url, timeout=2):
-    """第一阶段：快速筛选，小 Range 请求"""
+# ================== 测速 ==================
+
+def quick_test_url(session, url, timeout=3):
+    """第一阶段：连通性检测，不要求 Range 支持"""
     try:
         import ssl
         import urllib.request
@@ -404,19 +406,28 @@ def quick_test_url(session, url, timeout=2):
         ctx.check_hostname = False
         ctx.verify_mode = ssl.CERT_NONE
         req = urllib.request.Request(url, headers={
-            "Range": "bytes=0-1023",
             "User-Agent": "Mozilla/5.0"
         })
+        req.method = "HEAD"
         with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
             if resp.status < 400:
                 return True
     except Exception:
-        pass
+        # HEAD 失败，尝试 GET 前 1KB
+        try:
+            req2 = urllib.request.Request(url, headers={
+                "Range": "bytes=0-1023",
+                "User-Agent": "Mozilla/5.0"
+            })
+            with urllib.request.urlopen(req2, timeout=timeout, context=ctx) as resp:
+                if resp.status < 400:
+                    return True
+        except Exception:
+            pass
     return False
 
-
-def precise_test_url(session, url, timeout=5):
-    """第二阶段：精确测速，Range 512KB"""
+def precise_test_url(session, url, timeout=8):
+    """第二阶段：尝试获取少量数据，验证流可用"""
     start = time.perf_counter()
     try:
         import ssl
@@ -425,15 +436,26 @@ def precise_test_url(session, url, timeout=5):
         ctx.check_hostname = False
         ctx.verify_mode = ssl.CERT_NONE
         req = urllib.request.Request(url, headers={
-            "Range": "bytes=0-524287",
             "User-Agent": "Mozilla/5.0"
         })
+        req.method = "HEAD"
         with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
             latency = time.perf_counter() - start
             if resp.status < 400:
                 return True, latency
     except Exception:
-        pass
+        # HEAD 失败，尝试 GET
+        try:
+            req2 = urllib.request.Request(url, headers={
+                "Range": "bytes=0-524287",
+                "User-Agent": "Mozilla/5.0"
+            })
+            with urllib.request.urlopen(req2, timeout=timeout, context=ctx) as resp:
+                latency = time.perf_counter() - start
+                if resp.status < 400:
+                    return True, latency
+        except Exception:
+            pass
     return False, float("inf")
 
 def ffprobe_check(url, timeout=10):
