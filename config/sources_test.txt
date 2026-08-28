@@ -1,0 +1,4 @@
+# 测试用网络源（只放 3 个）
+https://raw.githubusercontent.com/mingliu91/aptv-playlist/refs/heads/main/playlist.m3u
+https://github.com/Free-TV/IPTV/blob/master/playlists/playlist_korea.m3u8
+https://github.com/Free-TV/IPTV/blob/master/playlists/playlist_japan.m3u8

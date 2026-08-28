@@ -1,0 +1,38 @@
+{
+  "settings": {
+    "max_workers": 10,
+    "max_sources_per_channel": 3,
+    "max_sources_low_link": 5,
+    "test_timeout": 5,
+    "use_ffprobe": true,
+    "ffprobe_timeout": 10
+  },
+  "skip_dead_sources": true,
+  "local_sources_dir": "data/sources",
+  "network_sources_file": "config/sources.txt",
+  "group_mapping": {
+    "cctv": "央视",
+    "weishi": "卫视",
+    "satellite": "卫视",
+    "city": "城市",
+    "gangao": "港澳",
+    "tai": "台",
+    "japan": "日本",
+    "korea": "韩国",
+    "usa": "美国",
+    "uk": "英国",
+    "europe": "欧洲"
+  },
+  "city_keywords": {
+    "无锡": ["无锡"],
+    "苏州": ["苏州"],
+    "上海": ["上海", "shanghai"],
+    "杭州": ["杭州", "hangzhou"],
+    "北京": ["北京", "beijing"],
+    "南京": ["南京", "nanjing"],
+    "四川": ["四川", "sichuan"]
+  },
+  "group_keywords": {
+    "国际": ["al jazeera", "rt ", "russia today", "discovery", "national geographic"]
+  }
+}

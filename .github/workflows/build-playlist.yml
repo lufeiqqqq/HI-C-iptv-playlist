@@ -1,0 +1,59 @@
+# D:\AllCode\project\Python\M3U\HI-C-iptv-playlist\.github\workflows\build-playlist.yml
+name: Build HI-C IPTV Playlist
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */12 * * *"
+    - cron: "0 0 * * 0"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Weekly cleanup dead sources log
+        if: github.event.schedule == '0 0 * * 0'
+        run: |
+          rm -f logs/dead_sources.log
+          echo "Weekly cleanup: cleared dead_sources.log"
+
+      - name: Build playlist
+        run: |
+          python scripts/build.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add playlist.m3u
+          if [ -f logs/dead_sources.log ]; then git add logs/dead_sources.log; fi
+          if [ -f logs/dead_sources_summary.txt ]; then git add logs/dead_sources_summary.txt; fi
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "chore: auto update playlist $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+            git pull --rebase origin main
+            git push
+          fi

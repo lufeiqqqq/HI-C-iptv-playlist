@@ -1,0 +1,34 @@
+# 失效源汇总（长期保留，手动清理）
+# 格式: 首次发现时间 | 类型 | 源 | 原因
+
+2026-08-28 13:42:46 | 本地源 | D:\AllCode\project\Python\M3U\HI-C-iptv-playlist\data\sources\githubusercontent_1780731171_iptv.m3u8 | 未解析到有效频道
+2026-08-28 13:43:04 | 本地源 | D:\AllCode\project\Python\M3U\HI-C-iptv-playlist\data\sources\githubusercontent_1780731918_iptv.m3u8 | 未解析到有效频道
+2026-08-28 13:43:17 | 本地源 | D:\AllCode\project\Python\M3U\HI-C-iptv-playlist\data\sources\githubusercontent_1780740004_iptv.m3u8 | 未解析到有效频道
+2026-08-28 13:43:34 | 本地源 | D:\AllCode\project\Python\M3U\HI-C-iptv-playlist\data\sources\githubusercontent_1780761604_iptv.m3u8 | 未解析到有效频道
+2026-08-28 13:43:51 | 本地源 | D:\AllCode\project\Python\M3U\HI-C-iptv-playlist\data\sources\githubusercontent_1780783208_iptv.m3u8 | 未解析到有效频道
+2026-08-28 13:44:12 | 本地源 | D:\AllCode\project\Python\M3U\HI-C-iptv-playlist\data\sources\githubusercontent_1780804805_iptv.m3u8 | 未解析到有效频道
+2026-08-28 13:44:17 | 本地源 | D:\AllCode\project\Python\M3U\HI-C-iptv-playlist\data\sources\githubusercontent_1780858819_iptv.m3u8 | 未解析到有效频道
+2026-08-28 13:44:37 | 本地源 | D:\AllCode\project\Python\M3U\HI-C-iptv-playlist\data\sources\githubusercontent_1780895421_iptv.m3u8 | 未解析到有效频道
+2026-08-28 13:46:49 | 本地源 | D:\AllCode\project\Python\M3U\HI-C-iptv-playlist\data\sources\goodiptv_1780731171_bililive.m3u | 未解析到有效频道
+2026-08-28 13:46:49 | 本地源 | D:\AllCode\project\Python\M3U\HI-C-iptv-playlist\data\sources\goodiptv_1780731918_bililive.m3u | 未解析到有效频道
+2026-08-28 13:46:49 | 本地源 | D:\AllCode\project\Python\M3U\HI-C-iptv-playlist\data\sources\goodiptv_1780740004_bililive.m3u | 未解析到有效频道
+2026-08-28 13:46:49 | 本地源 | D:\AllCode\project\Python\M3U\HI-C-iptv-playlist\data\sources\goodiptv_1780761604_bililive.m3u | 未解析到有效频道
+2026-08-28 13:46:49 | 本地源 | D:\AllCode\project\Python\M3U\HI-C-iptv-playlist\data\sources\goodiptv_1780783208_bililive.m3u | 未解析到有效频道
+2026-08-28 13:46:49 | 本地源 | D:\AllCode\project\Python\M3U\HI-C-iptv-playlist\data\sources\goodiptv_1780804804_bililive.m3u | 未解析到有效频道
+2026-08-28 13:46:49 | 本地源 | D:\AllCode\project\Python\M3U\HI-C-iptv-playlist\data\sources\goodiptv_1780858819_bililive.m3u | 未解析到有效频道
+2026-08-28 13:46:49 | 本地源 | D:\AllCode\project\Python\M3U\HI-C-iptv-playlist\data\sources\goodiptv_1780895420_bililive.m3u | 未解析到有效频道
+2026-08-28 13:46:56 | 网络源 | https://live.zbds.top/tv/iptv4.m3u | 下载失败或返回空内容
+2026-08-28 13:46:56 | 网络源 | https://szyyds.cn/tv/live/x.txt | 下载失败或返回空内容
+2026-08-28 13:47:04 | 网络源 | https://gh-proxy.com/https://raw.githubusercontent.com/maoystv/6/main/TV/live20220813.txt | 下载失败或返回空内容
+2026-08-28 13:47:04 | 网络源 | https://gh-proxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/main/live.txt | 下载失败或返回空内容
+2026-08-28 13:47:05 | 网络源 | https://gh-proxy.com/https://raw.githubusercontent.com/kakaxi-1/IPTV/main/ipv4.txt | 下载失败或返回空内容
+2026-08-28 13:47:05 | 网络源 | https://ghproxy.net/https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt | 下载失败或返回空内容
+2026-08-28 13:47:05 | 网络源 | https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.m3u | 下载失败或返回空内容
+2026-08-28 13:47:05 | 网络源 | https://wget.la/https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u | 下载失败或返回空内容
+2026-08-28 13:47:05 | 网络源 | https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt | 下载失败或返回空内容
+2026-08-28 13:47:05 | 网络源 | https://iptv-org.github.io/iptv/index.m3u | 下载失败或返回空内容
+2026-08-28 13:47:05 | 网络源 | https://raw.githubusercontent.com/iptv-org/iptv/master/streams/cn.m3u | 下载失败或返回空内容
+2026-08-28 13:47:05 | 网络源 | https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8 | 下载失败或返回空内容
+2026-08-28 14:15:23 | 网络源 | https://raw.githubusercontent.com/mingliu91/aptv-playlist/refs/heads/main/playlist.m3u | 下载失败或返回空内容
+2026-08-28 14:15:23 | 网络源 | https://github.com/Free-TV/IPTV/blob/master/playlists/playlist_korea.m3u8 | 下载失败或返回空内容
+2026-08-28 14:15:23 | 网络源 | https://github.com/Free-TV/IPTV/blob/master/playlists/playlist_japan.m3u8 | 下载失败或返回空内容

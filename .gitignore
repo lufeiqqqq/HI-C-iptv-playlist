@@ -1,0 +1,11 @@
+# D:\AllCode\project\Python\M3U\HI-C-iptv-playlist\.gitignore
+__pycache__/
+*.pyc
+*.log
+.idea/
+.vscode/
+*.tmp
+
+# 允许提交失效源日志和汇总
+!logs/dead_sources.log
+!logs/dead_sources_summary.txt
