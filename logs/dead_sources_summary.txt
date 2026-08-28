@@ -32,3 +32,4 @@
 2026-08-28 14:15:23 | 网络源 | https://raw.githubusercontent.com/mingliu91/aptv-playlist/refs/heads/main/playlist.m3u | 下载失败或返回空内容
 2026-08-28 14:15:23 | 网络源 | https://github.com/Free-TV/IPTV/blob/master/playlists/playlist_korea.m3u8 | 下载失败或返回空内容
 2026-08-28 14:15:23 | 网络源 | https://github.com/Free-TV/IPTV/blob/master/playlists/playlist_japan.m3u8 | 下载失败或返回空内容
+2026-08-28 07:11:25 | 网络源 | https://raw.githubusercontent.com/Free-TV/IPTV/refs/heads/master/playlists/playlist_hongkong.m3u8 | 未解析到有效频道
