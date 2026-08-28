@@ -3,20 +3,16 @@
 http://182.140.125.47:808/hls/1/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-1 综合
 http://124.116.183.146:9901/tsfile/live/0001_1.m3u8
-#EXTINF:-1 group-title="央视",CCTV-2 财经
-http://222.169.85.8:9901/tsfile/live/0002_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-3 综艺
 http://124.116.183.146:9901/tsfile/live/0003_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-4 中文国际
-http://120.198.95.220:9901/tsfile/live/1018_1.m3u8?key=txiptv&playlive=1&down=1
+https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
 #EXTINF:-1 group-title="央视",CCTV-4 中文国际
 https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8
 #EXTINF:-1 group-title="央视",CCTV-4 中文国际
-https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
+http://120.198.95.220:9901/tsfile/live/1018_1.m3u8?key=txiptv&playlive=1&down=1
 #EXTINF:-1 group-title="央视",CCTV-5 体育
 http://120.198.95.220:9901/tsfile/live/1019_1.m3u8?key=txiptv&playlive=1&down=1
-#EXTINF:-1 group-title="央视",CCTV-5 体育
-http://222.169.85.8:9901/tsfile/live/0005_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-6 电影
 http://182.140.125.47:808/hls/6/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-6 电影
@@ -31,10 +27,6 @@ http://124.116.183.146:9901/tsfile/live/0008_1.m3u8
 http://221.7.175.154:8445/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="央视",CCTV-10 科教
 http://221.7.175.154:8445/tsfile/live/1008_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="央视",CCTV-10 科教
-http://222.169.85.8:9901/tsfile/live/0010_1.m3u8
-#EXTINF:-1 group-title="央视",CCTV-11 戏曲
-http://222.169.85.8:9901/tsfile/live/0011_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-12 社会与法
 http://221.7.175.154:8445/tsfile/live/1010_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="央视",CCTV-13 新闻
@@ -42,17 +34,13 @@ http://112.123.243.37:50085/tsfile/live/0014_1.m3u8?key=txiptv&playlive=0&authid
 #EXTINF:-1 group-title="央视",CCTV-13 新闻
 http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8
 #EXTINF:-1 group-title="央视",CCTV-14 少儿
-http://124.116.183.146:9901/tsfile/live/0014_1.m3u8
-#EXTINF:-1 group-title="央视",CCTV-14 少儿
 https://event.pull.hebtv.com/jishi/cp2.m3u8
-#EXTINF:-1 group-title="央视",CCTV-15 音乐
-http://222.169.85.8:9901/tsfile/live/0015_1.m3u8
+#EXTINF:-1 group-title="央视",CCTV-14 少儿
+http://124.116.183.146:9901/tsfile/live/0014_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-15 音乐
 http://219.147.245.238:25480/newlive/live/hls/16/live.m3u8
 #EXTINF:-1 group-title="央视",CCTV-16 奥林匹克
 http://219.147.245.238:25480/newlive/live/hls/17/live.m3u8
-#EXTINF:-1 group-title="央视",CCTV-17 农业农村
-http://222.169.85.8:9901/tsfile/live/0007_1.m3u8
 #EXTINF:-1 group-title="卫视",湖南卫视
 http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
 #EXTINF:-1 group-title="卫视",北京卫视
@@ -69,5 +57,3 @@ http://124.116.183.146:9901/tsfile/live/0130_1.m3u8
 http://124.116.183.146:9901/tsfile/live/0132_1.m3u8
 #EXTINF:-1 group-title="卫视",重庆卫视
 http://107.150.60.122/live/cqwshd.m3u8
-#EXTINF:-1 group-title="卫视",贵州卫视
-http://222.214.208.34:59901/tsfile/live/0120_1.m3u8
