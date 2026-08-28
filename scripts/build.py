@@ -630,70 +630,79 @@ def build():
                 if ch_name not in allow_set:
                     del raw_channels[group][ch_name]
 
-    # 5. 两阶段测速
-    logger.info("开始两阶段测速...")
-    all_urls = []
-    for group in raw_channels:
-        for ch_name, items in raw_channels[group].items():
-            for url, source_id in items:
-                all_urls.append((group, ch_name, url))
-
-    session = get_session()
-
-    # 第一阶段：快速筛选
-    logger.info(f"第一阶段快速筛选 {len(all_urls)} 个 URL...")
-    quick_pass_urls = []
-    with ThreadPoolExecutor(max_workers=max_workers) as pool:
-        future_map = {}
-        for group, ch_name, url in all_urls:
-            f = pool.submit(quick_test_url, session, url)
-            future_map[f] = (group, ch_name, url)
-
-        for future in as_completed(future_map):
-            group, ch_name, url = future_map[future]
-            if future.result():
-                quick_pass_urls.append((group, ch_name, url))
-
-    logger.info(f"第一阶段通过 {len(quick_pass_urls)}/{len(all_urls)} 个 URL")
-
-    # 第二阶段：精确测速
-    logger.info("第二阶段精确测速...")
-    precise_pass_urls = []
-    with ThreadPoolExecutor(max_workers=max_workers) as pool:
-        future_map = {}
-        for group, ch_name, url in quick_pass_urls:
-            f = pool.submit(precise_test_url, session, url, test_timeout)
-            future_map[f] = (group, ch_name, url)
-
-        for future in as_completed(future_map):
-            group, ch_name, url = future_map[future]
-            ok, latency = future.result()
-            if ok:
-                precise_pass_urls.append((group, ch_name, url, latency))
-
-    # 第三阶段：ffprobe 视频流检测（可选）
+    # 5. 测速或跳过
+    skip_speed_test = settings.get("skip_speed_test", False)
     tested = defaultdict(lambda: defaultdict(list))
-    if use_ffprobe:
-        if shutil.which("ffprobe"):
-            logger.info(f"第三阶段 ffprobe 视频流检测 {len(precise_pass_urls)} 个 URL...")
-            with ThreadPoolExecutor(max_workers=max_workers) as pool:
-                future_map = {}
-                for group, ch_name, url, latency in precise_pass_urls:
-                    f = pool.submit(ffprobe_check, url, ffprobe_timeout)
-                    future_map[f] = (group, ch_name, url, latency)
 
-                for future in as_completed(future_map):
-                    group, ch_name, url, latency = future_map[future]
-                    ok, _ = future.result()
-                    if ok:
-                        tested[group][ch_name].append((url, latency))
+    if skip_speed_test:
+        logger.info("跳过测速，直接使用所有去重后的 URL")
+        for group in raw_channels:
+            for ch_name, items in raw_channels[group].items():
+                for url, source_id in items:
+                    tested[group][ch_name].append((url, 0.0))
+    else:
+        logger.info("开始两阶段测速...")
+        all_urls = []
+        for group in raw_channels:
+            for ch_name, items in raw_channels[group].items():
+                for url, source_id in items:
+                    all_urls.append((group, ch_name, url))
+
+        session = get_session()
+
+        # 第一阶段：快速筛选
+        logger.info(f"第一阶段快速筛选 {len(all_urls)} 个 URL...")
+        quick_pass_urls = []
+        with ThreadPoolExecutor(max_workers=max_workers) as pool:
+            future_map = {}
+            for group, ch_name, url in all_urls:
+                f = pool.submit(quick_test_url, session, url)
+                future_map[f] = (group, ch_name, url)
+
+            for future in as_completed(future_map):
+                group, ch_name, url = future_map[future]
+                if future.result():
+                    quick_pass_urls.append((group, ch_name, url))
+
+        logger.info(f"第一阶段通过 {len(quick_pass_urls)}/{len(all_urls)} 个 URL")
+
+        # 第二阶段：精确测速
+        logger.info("第二阶段精确测速...")
+        precise_pass_urls = []
+        with ThreadPoolExecutor(max_workers=max_workers) as pool:
+            future_map = {}
+            for group, ch_name, url in quick_pass_urls:
+                f = pool.submit(precise_test_url, session, url, test_timeout)
+                future_map[f] = (group, ch_name, url)
+
+            for future in as_completed(future_map):
+                group, ch_name, url = future_map[future]
+                ok, latency = future.result()
+                if ok:
+                    precise_pass_urls.append((group, ch_name, url, latency))
+
+        # 第三阶段：ffprobe 视频流检测（可选）
+        if use_ffprobe:
+            if shutil.which("ffprobe"):
+                logger.info(f"第三阶段 ffprobe 视频流检测 {len(precise_pass_urls)} 个 URL...")
+                with ThreadPoolExecutor(max_workers=max_workers) as pool:
+                    future_map = {}
+                    for group, ch_name, url, latency in precise_pass_urls:
+                        f = pool.submit(ffprobe_check, url, ffprobe_timeout)
+                        future_map[f] = (group, ch_name, url, latency)
+
+                    for future in as_completed(future_map):
+                        group, ch_name, url, latency = future_map[future]
+                        ok, _ = future.result()
+                        if ok:
+                            tested[group][ch_name].append((url, latency))
+            else:
+                logger.warning("配置启用 ffprobe 但未找到 ffprobe，仅使用 HTTP 测速结果")
+                for group, ch_name, url, latency in precise_pass_urls:
+                    tested[group][ch_name].append((url, latency))
         else:
-            logger.warning("配置启用 ffprobe 但未找到 ffprobe，仅使用 HTTP 测速结果")
             for group, ch_name, url, latency in precise_pass_urls:
                 tested[group][ch_name].append((url, latency))
-    else:
-        for group, ch_name, url, latency in precise_pass_urls:
-            tested[group][ch_name].append((url, latency))
 
     # 6. 生成 playlist.m3u
     group_order = [

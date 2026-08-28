@@ -4,8 +4,9 @@
     "max_sources_per_channel": 3,
     "max_sources_low_link": 5,
     "test_timeout": 5,
-    "use_ffprobe": true,
-    "ffprobe_timeout": 10
+    "use_ffprobe": false,
+    "ffprobe_timeout": 10,
+    "skip_speed_test": true
   },
   "skip_dead_sources": true,
   "local_sources_dir": "data/sources",
