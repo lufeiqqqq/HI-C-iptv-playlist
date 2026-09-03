@@ -4,7 +4,7 @@ http://124.116.183.146:9901/tsfile/live/0001_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-1 综合
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226016/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-1 综合
-http://182.140.125.47:808/hls/1/index.m3u8
+http://112.123.243.37:50085/tsfile/live/0001_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="央视",CCTV-2 财经
 http://222.169.85.8:9901/tsfile/live/0002_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-2 财经
@@ -15,14 +15,12 @@ http://221.7.175.154:8445/tsfile/live/1001_1.m3u8?key=txiptv&playlive=1&authid=0
 http://124.116.183.146:9901/tsfile/live/0003_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-3 综艺
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226021/index.m3u8
-#EXTINF:-1 group-title="央视",CCTV-3 综艺
-http://112.30.73.119:229/tsfile/live/0003_2.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="央视",CCTV-4 中文国际
 https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
 #EXTINF:-1 group-title="央视",CCTV-4 中文国际
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226428/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-4 中文国际
-https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1788332400-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-7a4d1ca767abcf4948fc9cdc64f668c0&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
+https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1788418800-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-01fb6605bc27f1255942616ea7596d8f&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
 #EXTINF:-1 group-title="央视",CCTV-4 中文国际
 https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8
 #EXTINF:-1 group-title="央视",CCTV-5 体育
@@ -31,6 +29,8 @@ http://222.169.85.8:9901/tsfile/live/0005_1.m3u8
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226019/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-5 体育
 https://piccpndali.v.myalicdn.com/audio/cctv5_2.m3u8
+#EXTINF:-1 group-title="央视",CCTV-5 体育
+http://120.198.95.220:9901/tsfile/live/1019_1.m3u8?key=txiptv&playlive=1&down=1
 #EXTINF:-1 group-title="央视",CCTV-5+ 体育赛事
 http://cssbyd.imwork.net:8082/hls/6/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-5+ 体育赛事
@@ -42,33 +42,37 @@ http://124.116.183.146:9901/tsfile/live/0006_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-6 电影
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226010/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-6 电影
-http://112.123.243.37:50085/tsfile/live/0007_1.m3u8?key=txiptv&playlive=0&authid=0
+http://112.30.73.119:229/tsfile/live/0006_2.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="央视",CCTV-7 国防军事
 http://124.116.183.146:9901/tsfile/live/0007_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-7 国防军事
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225733/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-7 国防军事
-http://101.66.199.17:9901/tsfile/live/0007_1.m3u8?key=txiptv&playlive=0&authid=0
+http://112.123.243.37:50085/tsfile/live/0008_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="央视",CCTV-8 电视剧
 http://124.116.183.146:9901/tsfile/live/0008_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-8 电视剧
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226008/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-8 电视剧
-http://101.66.199.17:9901/tsfile/live/0008_1.m3u8?key=txiptv&playlive=0&authid=0
+http://219.147.245.238:25480/newlive/live/hls/9/live.m3u8
 #EXTINF:-1 group-title="央视",CCTV-9 纪录
 http://112.27.235.94:8000/hls/10/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-9 纪录
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225734/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-9 纪录
-http://112.123.243.37:50085/tsfile/live/0010_1.m3u8?key=txiptv&playlive=0&authid=0
+http://120.198.95.220:9901/tsfile/live/1024_1.m3u8?key=txiptv&playlive=1&down=1
 #EXTINF:-1 group-title="央视",CCTV-10 科教
 http://222.169.85.8:9901/tsfile/live/0010_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-10 科教
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225730/index.m3u8
+#EXTINF:-1 group-title="央视",CCTV-10 科教
+http://120.198.95.220:9901/tsfile/live/1025_1.m3u8?key=txiptv&playlive=1&down=1
 #EXTINF:-1 group-title="央视",CCTV-11 戏曲
 http://222.169.85.8:9901/tsfile/live/0011_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-11 戏曲
 http://39.134.67.108/PLTV/88888888/224/3221225517/index.m3u8
+#EXTINF:-1 group-title="央视",CCTV-11 戏曲
+http://112.123.243.37:50085/tsfile/live/0012_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="央视",CCTV-12 社会与法
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225731/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-12 社会与法
@@ -79,22 +83,22 @@ http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226537/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-13 新闻
 http://piccpndali.v.myalicdn.com/audio/cctv13_2.m3u8
-#EXTINF:-1 group-title="央视",CCTV-13 新闻
-http://112.123.243.37:50085/tsfile/live/0014_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="央视",CCTV-14 少儿
 http://124.116.183.146:9901/tsfile/live/0014_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-14 少儿
 http://39.134.67.108/PLTV/88888888/224/3221225674/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-14 少儿
-https://event.pull.hebtv.com/jishi/cp2.m3u8
+http://112.123.243.37:50085/tsfile/live/0015_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="央视",CCTV-15 音乐
 http://222.169.85.8:9901/tsfile/live/0015_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-15 音乐
 http://39.134.67.108/PLTV/88888888/224/3221225513/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-15 音乐
-http://120.198.95.220:9901/tsfile/live/1030_1.m3u8?key=txiptv&playlive=1&down=1
+http://112.123.243.37:50085/tsfile/live/0016_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="央视",CCTV-16 奥林匹克
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226100/index.m3u8
+#EXTINF:-1 group-title="央视",CCTV-16 奥林匹克
+http://219.147.245.238:25480/newlive/live/hls/17/live.m3u8
 #EXTINF:-1 group-title="央视",CCTV-17 农业农村
 http://222.169.85.8:9901/tsfile/live/0007_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-17 农业农村
