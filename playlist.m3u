@@ -18,7 +18,7 @@ http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226428/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-4 中文国际
 https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
 #EXTINF:-1 group-title="央视",CCTV-4 中文国际
-https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1790319600-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-3ef45531a2fbc9ec692d7ef3be0ad92b&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
+https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1790406000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-f7c9d94f9d6e1f8b5799eabfd2e32719&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
 #EXTINF:-1 group-title="央视",CCTV-4 中文国际
 https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8
 #EXTINF:-1 group-title="央视",CCTV-5 体育
@@ -50,7 +50,7 @@ http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225734/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-9 纪录
 http://112.27.235.94:8000/hls/10/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-9 纪录
-https://v4-702cae17a28d6e4f0c0002bba021d934.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=44c8960076c2281ffb91f4c00d91ed1b
+https://v4-e6b1c5baf4e240fe63adbf68dda23435.livehwc4.com/play.kankanlive.com/live/1698423397390920.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=1e9730e0063c850647fc4a725fa3e333
 #EXTINF:-1 group-title="央视",CCTV-10 科教
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225730/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-10 科教
@@ -59,26 +59,18 @@ http://222.169.85.8:9901/tsfile/live/0010_1.m3u8
 http://39.134.67.108/PLTV/88888888/224/3221225517/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-11 戏曲
 http://222.169.85.8:9901/tsfile/live/0011_1.m3u8
-#EXTINF:-1 group-title="央视",CCTV-11 戏曲
-http://112.123.243.37:50085/tsfile/live/0012_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="央视",CCTV-12 社会与法
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225731/index.m3u8
-#EXTINF:-1 group-title="央视",CCTV-12 社会与法
-http://112.123.243.37:50085/tsfile/live/0013_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="央视",CCTV-13 新闻
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226537/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-13 新闻
 http://piccpndali.v.myalicdn.com/audio/cctv13_2.m3u8
 #EXTINF:-1 group-title="央视",CCTV-13 新闻
 http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8
-#EXTINF:-1 group-title="央视",CCTV-13 新闻
-https://event.pull.hebtv.com/jishi/cp1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-14 少儿
 http://39.134.67.108/PLTV/88888888/224/3221225674/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-14 少儿
 http://124.116.183.146:9901/tsfile/live/0014_1.m3u8
-#EXTINF:-1 group-title="央视",CCTV-14 少儿
-http://112.123.243.37:50085/tsfile/live/0015_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="央视",CCTV-15 音乐
 http://39.134.67.108/PLTV/88888888/224/3221225513/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-15 音乐
