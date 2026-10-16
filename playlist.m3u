@@ -3,26 +3,22 @@
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226016/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-1 综合
 http://124.116.183.146:9901/tsfile/live/0001_1.m3u8
-#EXTINF:-1 group-title="央视",CCTV-1 综合
-http://101.66.199.91:9901/tsfile/live/0001_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="央视",CCTV-2 财经
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226540/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-2 财经
 http://222.169.85.8:9901/tsfile/live/0002_1.m3u8
-#EXTINF:-1 group-title="央视",CCTV-2 财经
-http://125.125.236.31:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="央视",CCTV-3 综艺
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226021/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-3 综艺
 http://124.116.183.146:9901/tsfile/live/0003_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-3 综艺
-http://125.125.236.31:9901/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0
+http://183.10.180.203:9901/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="央视",CCTV-4 中文国际
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226428/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-4 中文国际
 https://global.cgtn.cicc.media.caton.cloud/master/cgtn-america.m3u8
 #EXTINF:-1 group-title="央视",CCTV-4 中文国际
-http://183.10.180.46:9901/tsfile/live/1071_1.m3u8?key=txiptv&playlive=1&authid=0
+https://live-play-hls.cctvnews.cctv.com/CCTVChannel/channel_cctv4_mbd.m3u8?auth_key=1792134000-1-b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c-331f666e83cec17730f9bd45baf27f39&yid=b59134a2ead43d7f783f943c8f535e7bb80c5169575b2e8efcd5b3ddea21b41c
 #EXTINF:-1 group-title="央视",CCTV-4 中文国际
 https://dash2.antik.sk/live/test_cctv_tizen/playlist.m3u8
 #EXTINF:-1 group-title="央视",CCTV-5 体育
@@ -43,8 +39,6 @@ http://cssbyd.imwork.net:8082/hls/6/index.m3u8
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226010/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-6 电影
 http://124.116.183.146:9901/tsfile/live/0006_1.m3u8
-#EXTINF:-1 group-title="央视",CCTV-6 电影
-http://125.125.236.31:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="央视",CCTV-7 国防军事
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225733/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-7 国防军事
@@ -58,21 +52,19 @@ http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225734/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-9 纪录
 http://112.27.235.94:8000/hls/10/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-9 纪录
-http://101.66.199.91:9901/tsfile/live/0009_1.m3u8?key=txiptv&playlive=0&authid=0
+http://124.228.160.112:9901/tsfile/live/0009_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="央视",CCTV-10 科教
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225730/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-10 科教
 http://222.169.85.8:9901/tsfile/live/0010_1.m3u8
-#EXTINF:-1 group-title="央视",CCTV-10 科教
-http://101.66.198.93:9901/tsfile/live/0010_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 group-title="央视",CCTV-11 戏曲
 http://39.134.67.108/PLTV/88888888/224/3221225517/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-11 戏曲
 http://222.169.85.8:9901/tsfile/live/0011_1.m3u8
-#EXTINF:-1 group-title="央视",CCTV-11 戏曲
-http://113.57.140.161:10081/newlive/live/hls/12/live.m3u8
 #EXTINF:-1 group-title="央视",CCTV-12 社会与法
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225731/index.m3u8
+#EXTINF:-1 group-title="央视",CCTV-12 社会与法
+http://221.226.51.220:50081/newlive/live/hls/13/live.m3u8
 #EXTINF:-1 group-title="央视",CCTV-13 新闻
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226537/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-13 新闻
@@ -86,17 +78,15 @@ http://39.134.67.108/PLTV/88888888/224/3221225674/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-14 少儿
 http://124.116.183.146:9901/tsfile/live/0014_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-14 少儿
-http://101.66.198.174:9901/tsfile/live/0014_1.m3u8?key=txiptv&playlive=0&authid=0
+http://125.125.236.31:9901/tsfile/live/0014_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="央视",CCTV-15 音乐
 http://39.134.67.108/PLTV/88888888/224/3221225513/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-15 音乐
 http://222.169.85.8:9901/tsfile/live/0015_1.m3u8
 #EXTINF:-1 group-title="央视",CCTV-15 音乐
-http://173.208.212.130:8181/1080p/cctv15.m3u8
+http://222.169.85.8:9901/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="央视",CCTV-16 奥林匹克
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226100/index.m3u8
-#EXTINF:-1 group-title="央视",CCTV-16 奥林匹克
-http://173.208.234.146/live/cctv16.m3u8
 #EXTINF:-1 group-title="央视",CCTV-17 农业农村
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225765/index.m3u8
 #EXTINF:-1 group-title="央视",CCTV-17 农业农村
@@ -123,6 +113,8 @@ https://txmov2.a.kwimgs.com/upic/2023/01/26/09/BMjAyMzAxMjYwOTE3NDVfNzM5MzQzNzIy
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226313/index.m3u8
 #EXTINF:-1 group-title="卫视",深圳卫视
 http://124.116.183.146:9901/tsfile/live/0126_1.m3u8
+#EXTINF:-1 group-title="卫视",深圳卫视
+http://107.150.60.122/live/szwshd.m3u8
 #EXTINF:-1 group-title="卫视",安徽卫视
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226391/index.m3u8
 #EXTINF:-1 group-title="卫视",安徽卫视
